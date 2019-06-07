@@ -1,0 +1,28 @@
+<div class="container">
+  <header>
+    <h1>
+      Users
+    </h1>
+  </header>
+  <section>
+    <article *ngFor="let user of users">
+      <img src="{{user.picture.large}}" alt="">
+      <h2>
+        {{user.name.first}} {{user.name.last}}
+      </h2>
+      <h3>
+        {{user.email}}
+      </h3>
+      <hr>
+      <span>
+        Nacionalidad: {{user.nat}}
+      </span>
+      <address>
+        Ciudad: {{user.location.city}}
+      </address>
+    </article>
+  </section>
+  <footer>
+    <p>&copy; Derechos reservados</p>
+  </footer>
+</div>
